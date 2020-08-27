@@ -1,0 +1,26 @@
+{
+  "name": "stopwatch-tasks",
+  "version": "1.0.0",
+  "description": "Register your daily tasks and improve your productivity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesAnnibal/stopwatch-tasks.git"
+  },
+  "keywords": [
+    "Task",
+    "manager",
+    "time",
+    "manager",
+    "stopwatch"
+  ],
+  "author": "Charles Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlesAnnibal/stopwatch-tasks/issues"
+  },
+  "homepage": "https://github.com/CharlesAnnibal/stopwatch-tasks#readme"
+}
