@@ -32,4 +32,4 @@ jobs:
         app-name: 'stopwatch-tasks'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_a55cfe5f542947629380deb7e7372680 }}
-        package: .
+        package: ./build
