@@ -38,7 +38,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-        ftp-server: ftp://files.000webhost.com/public_html
+        ftp-server: ${{ secrets.FTP_HOST_000_WEBHOST_STOPWATCHTASK }}
         # FTP account username
         ftp-username: stopwatch-tasks
         # FTP account password
