@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <FooterWrapper className="test">
             <Container>
-               <Paragraph>Developer by Charles Santos</Paragraph>
+               <Paragraph>Developed by Charles Santos</Paragraph>
                <Paragraph>https://www.linkedin.com/in/charles-annibal/</Paragraph>
                <Paragraph>https://github.com/CharlesAnnibal</Paragraph>
             </Container>

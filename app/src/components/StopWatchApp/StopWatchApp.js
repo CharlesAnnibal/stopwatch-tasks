@@ -93,7 +93,7 @@ export default class StopWatchApp extends Component {
         return (
             <StopWatchAppWrapper className="stopwatch-app">
                 <StopWatchContainer>
-                    <H1Title>Stopwatch to manage your daily tasks</H1Title>
+                    <H1Title>Timer to manage your daily tasks</H1Title>
                     <Time>
                         {this.state.strTime}
                     </Time>

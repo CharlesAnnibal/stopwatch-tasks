@@ -15,7 +15,7 @@ const InfoSection = () => {
                 <Paragraph>
                     Use our tool to register the time spended on each task. It
                     can be very useful for you that make a lot of amazing things
-                    but don´t know exactly how much time was spended.
+                    but don´t knows exactly how much time was spended.
                 </Paragraph>
                 <Titles>Useful for many roles</Titles>
                 <Paragraph>
