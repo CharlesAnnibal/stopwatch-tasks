@@ -13,6 +13,7 @@ const DefaultButton = (props) => {
       transparent={props.transparent}
       textcolor={props.textcolor}
       bgcolor={props.bgcolor} 
+      borderColor={props.borderColor}
       width={props.width}>
 
       {props.children}
