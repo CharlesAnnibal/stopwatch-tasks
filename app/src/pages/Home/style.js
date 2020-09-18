@@ -42,7 +42,7 @@ export const Sidebar = styled.aside`
 
   @media (min-width: 768px) {
     position: relative;
-    height: 100%;
+    height: 80%;
     width: 25%;
   }
 `;
