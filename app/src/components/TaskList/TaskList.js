@@ -34,7 +34,7 @@ export default class TaskList extends Component {
 
     return (
       <>
-        <Titles>Tasks list</Titles>
+        <Titles>Task list</Titles>
         <List  className="list">{list}</List>
       </>
     );
