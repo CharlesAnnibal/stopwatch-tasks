@@ -27,6 +27,7 @@ const CookieConsent = () => {
     return (
         <CookieConsentWrapper
             className="cookieConsent"
+            
             shouldShowPopup={shouldShowPopup}
         >
             <Text>
