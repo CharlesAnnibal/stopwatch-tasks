@@ -3,6 +3,7 @@ export const CookieConsentWrapper = styled.div`
     visibility:${props => props.shouldShowPopup ? 'visible' : 'hidden'};
     opacity:${props => props.shouldShowPopup ? '1' : '0'};
     position: fixed;
+    display:flex;
     bottom: 0;
     width: 100%;
     justify-content: flex-start;
