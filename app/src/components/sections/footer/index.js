@@ -3,7 +3,7 @@ import { FooterWrapper, Container, Paragraph } from "./style.js";
 
 const Footer = () => {
     return (
-        <FooterWrapper className="test">
+        <FooterWrapper className="footer">
             <Container>
                <Paragraph>Developed by Charles Santos</Paragraph>
                <Paragraph>https://www.linkedin.com/in/charles-annibal/</Paragraph>
