@@ -41,7 +41,7 @@ export default class Home extends Component {
                 </FirstArticle>
                 <InfoSection />
                 <Footer/>
-                <CookieConsent></CookieConsent>
+                <CookieConsent/>
             </Wrapper>
         );
     }
