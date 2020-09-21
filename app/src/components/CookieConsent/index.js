@@ -5,9 +5,9 @@ import { MAIN_COLOR_MEDIUM } from "../../constants/defaultStyleProps.js";
 
 const CookieConsent = () => {
     const consentPropertyName = "stopwatchtask_accept_cookies";
-    const initialState = !localStorage.getItem(consentPropertyName) === true 
+    const initialState = localStorage.getItem(consentPropertyName) === "true" 
 
-    const [shouldShowPopup, setShouldShowPopup] = useState(initialState);
+    const [shouldShowPopup, setShouldShowPopup] = useState(!initialState);
 
     console.log(
         "mmm",
@@ -16,7 +16,7 @@ const CookieConsent = () => {
     );
     useEffect(() => {
         console.log("Aaa", shouldShowPopup);
-        localStorage.setItem(consentPropertyName, true);
+        localStorage.setItem(consentPropertyName, "true");
     }, [shouldShowPopup]);
 
     const acceptCookieConsent = () => {
