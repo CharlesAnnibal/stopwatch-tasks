@@ -19,7 +19,7 @@ module.exports = {
         before: function(app) {
             app.use(apiMocker('/api', 'mocks/api'));
         },
-        host: '172.18.38.193',//your ip address
+        host: '192.168.80.225',//your ip address
     },
     module: {
         rules: [

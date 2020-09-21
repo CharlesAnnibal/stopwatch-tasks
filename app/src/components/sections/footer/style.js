@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {BLACK, WHITE} from '../../../constants/defaultStyleProps';
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.footer`
       display:flex;
       width:100%; 
       justify-content:flex-end;

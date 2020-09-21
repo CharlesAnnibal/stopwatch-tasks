@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const CookieConsentWrapper = styled.div`
-    display: ${props => props.shouldShowPopup ? 'flex' : 'none'};
+    visibility:${props => props.shouldShowPopup ? 'visible' : 'hidden'};
+    opacity:${props => props.shouldShowPopup ? '1' : '0'};
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -8,6 +9,8 @@ export const CookieConsentWrapper = styled.div`
     flex-direction: column;
     background-color: #333;
     padding:5%;
+    transition: all 1s;
+
 
     @media (min-width: 768px) {
         flex-direction: row;
