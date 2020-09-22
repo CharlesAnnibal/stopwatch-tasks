@@ -101,6 +101,8 @@ export default class TextInput extends Component {
 
     render() {
 
+        const autocomplete = this.props.type === "tel" ? "none" : "on"
+
         return (
             <Wrapper
                 validationError={this.state.validationError}>
