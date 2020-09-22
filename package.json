@@ -37,6 +37,7 @@
     "add": "^2.0.6",
     "connect-api-mocker": "^1.9.0",
     "react": "^16.13.1",
+    "react-cookie-consent": "^5.1.3",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "redux-saga": "^1.1.3",
