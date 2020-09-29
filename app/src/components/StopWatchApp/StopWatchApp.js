@@ -14,6 +14,7 @@ import {
 } from "../../constants/defaultStyleProps";
 import DefaultButton from "../DefaultButton/index.js";
 import TextInput from "../formInputs/TextInput";
+import NotificationsComponent from "../NotificationsComponent/index.js";
 
 export default class StopWatchApp extends Component {
     constructor(props) {
@@ -159,6 +160,12 @@ export default class StopWatchApp extends Component {
                     >
                         Digit a title description for your task
                     </TextInput>
+                    <NotificationsComponent 
+                        playing={this.state.playing} 
+                        currentSeconds={this.state.seconds}
+                        currentStrTime={this.state.strTime}
+                        description={this.state.description}
+                        ></NotificationsComponent>
                 </StopWatchContainer>
             </StopWatchAppWrapper>
         );
