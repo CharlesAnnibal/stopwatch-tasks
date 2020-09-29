@@ -58,7 +58,6 @@ export default class Home extends Component {
                     continuing to browse otherwise.{" "}
 
                 </CookieConsent>
-                <NotificationsComponent></NotificationsComponent>
             </Wrapper>
         );
     }
