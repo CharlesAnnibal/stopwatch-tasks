@@ -1,4 +1,4 @@
-export const MAIN_COLOR_DARK = "#4d4bc1";
+export const MAIN_COLOR_DARK = "#4b3e90";
 export const MAIN_COLOR_MEDIUM = "#4d4bc1";
 export const DIGITAL_BLUE = "#1D19FF";
 export const MAIN_COLOR_LIGHT = DIGITAL_BLUE;

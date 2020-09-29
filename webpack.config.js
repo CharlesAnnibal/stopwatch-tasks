@@ -3,6 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const apiMocker = require('connect-api-mocker');
 const webpack = require('webpack')
 
+const { networkInterfaces } = require('os');
+console.log(networkInterfaces())
+const ipWifi = networkInterfaces()["Wi-Fi"][1].address;
+const ipAdress = networkInterfaces()["vEthernet (Default Switch)"][1].address;
 
 module.exports = {
     watch: true,
@@ -14,12 +18,13 @@ module.exports = {
         //publicPath: path.resolve(__dirname, 'public'),
     },
     devServer: {
+        https: true,
         historyApiFallback: true,
         contentBase: path.join(__dirname, 'dist'),
         before: function(app) {
             app.use(apiMocker('/api', 'mocks/api'));
         },
-        host: '172.17.135.129',//your ip address
+        host: ipWifi,//your ip address
     },
     module: {
         rules: [

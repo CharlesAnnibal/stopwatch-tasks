@@ -15,6 +15,7 @@ import InfoSection from "../../components/sections/content/InfoSection/index.js"
 import Footer from "../../components/sections/footer/index.js";
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { BLACK, WHITE, MAIN_COLOR_MEDIUM } from "../../constants/defaultStyleProps.js";
+import NotificationsComponent from "../../components/NotificationsComponent/index.js";
 export default class Home extends Component {
     constructor(props) {
         super(props);
@@ -57,6 +58,7 @@ export default class Home extends Component {
                     continuing to browse otherwise.{" "}
 
                 </CookieConsent>
+                <NotificationsComponent></NotificationsComponent>
             </Wrapper>
         );
     }
