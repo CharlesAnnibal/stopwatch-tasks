@@ -34,7 +34,13 @@ const NotificationsComponent = ({ currentStrTime, currentSeconds , description})
 
     const _showNotification = () => {
         const text = `${currentStrTime} spent on task "${description}" .`;
-        const notification = new Notification("Task time reminder", { body: text });
+        if ('Notification' in window) {
+            try{
+                const notification = new Notification("Task time reminder", { body: text });
+            }catch(e){
+                console.log("Occurred an error when try to get an notification", e)
+            }
+        }
     }
 
 
