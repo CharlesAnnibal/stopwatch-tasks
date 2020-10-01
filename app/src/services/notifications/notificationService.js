@@ -14,22 +14,27 @@ const notificationService = () => {
 
     // Otherwise, we need to ask the user for permission
     else if (Notification.permission !== "denied") {
-        Notification.requestPermission().then(function (permission) {
-            // If the user accepts, let's create a notification
-            if (permission === "granted") {
-                var notification = new Notification("Hi there!");
-            }
-        });
+        if ('Notification' in window) {
+            Notification.requestPermission().then(function (permission) {
+                // If the user accepts, let's create a notification
+                if (permission === "granted") {
+                    /*navigator.serviceWorker.ready.then(function (registration) {
+                        registration.showNotification('Notification with ServiceWorker');
+                    });*/
+                    var notification = new Notification("Hi there!");
+                }
+            });
+        }
     }
 }
 
-export const askPermissionNotification = (fnSuccess, fnFailed)=>{
+export const askPermissionNotification = (fnSuccess, fnFailed) => {
     if (Notification.permission !== "granted") {
         Notification.requestPermission().then(function (permission) {
             // If the user accepts, let's create a notification
             if (permission === "granted") {
                 fnSuccess()
-            }else{
+            } else {
                 fnFailed()
             }
         });
