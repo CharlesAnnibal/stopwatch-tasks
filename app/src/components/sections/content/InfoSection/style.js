@@ -9,7 +9,7 @@ export const InfoSectionWrapper = styled.article`
     align-items: center;
     background-color: ${WHITE};
     flex-direction: column;
-    padding:5% 0;
+    padding:1% 0;
 `;
 
 export const Container = styled.div`
