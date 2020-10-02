@@ -30,7 +30,7 @@ export const Titles = styled.h2`
     text-align:center;
 
     @media(min-width:769px){
-        font-size:1.8vw;
+        font-size:2.5vw;
     }
 `
 
