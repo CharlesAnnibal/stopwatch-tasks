@@ -34,10 +34,11 @@ export default class Home extends Component {
                     </Sidebar>
                     <StopWatchApp></StopWatchApp>
                     <Sidebar>
-                        <SidebarContent>
+                        <SidebarContent className="sidebar-content-right">
                             <TaskListMobile>
                                 <TaskList></TaskList>
                             </TaskListMobile>
+                            <input type="hidden" name="IL_IN_TAG" value="2"/>
                         </SidebarContent>
                     </Sidebar>
                 </FirstArticle>
