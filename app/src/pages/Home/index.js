@@ -42,6 +42,9 @@ export default class Home extends Component {
                         </SidebarContent>
                     </Sidebar>
                 </FirstArticle>
+                <aside className="adContent">
+                    <input type="hidden" name="IL_IN_ARTICLE"></input>
+                </aside>
                 <InfoSection />
                 <Footer />
                 <CookieConsent
