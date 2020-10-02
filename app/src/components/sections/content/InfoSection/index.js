@@ -17,6 +17,7 @@ const InfoSection = () => {
                     can be very useful for you that make a lot of amazing things
                     but don´t knows exactly how much time was spended.
                 </Paragraph>
+                <input type="hidden" name="IL_IN_ARTICLE"></input>
                 <Titles>Useful for many roles</Titles>
                 <Paragraph>
                     Our tool can be useful for several activities and roles.
@@ -42,6 +43,7 @@ const InfoSection = () => {
                     Knows how many time you and your team is spending in
                     meetings.{" "}
                 </Paragraph>
+                <input type="hidden" name="IL_IN_ARTICLE"></input>
             </Container>
         </InfoSectionWrapper>
     );
