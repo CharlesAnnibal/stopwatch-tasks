@@ -38,7 +38,7 @@ export default class Home extends Component {
                             <TaskListMobile>
                                 <TaskList></TaskList>
                             </TaskListMobile>
-                            <input type="hidden" name="IL_IN_TAG" value="2"/>
+                            <input type="hidden" name="IL_IN_ARTICLE"></input>
                         </SidebarContent>
                     </Sidebar>
                 </FirstArticle>
